@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<style type="text/css">
+ {{!-- * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    } --}}
+    .body{
+        background-color: blue;
+    }
+    
+.container{
+    margin-top: 50px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(93, 84, 224);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#img{
+    align-self: center;
+    width: 50%;
+    border: solid 2px yellow;
+     border-radius: 50%;}
+ }
+ .main{
+     margin-top:30px;
+     padding: 25px;
+     background-color: white;
+     padding: 30px;
+ }
+ .list{
+     margin:10px;
+     display: flex;
+     justify-content: space-around;
+
+ }
+
+ .row{
+     margin-top: 10px;
+     display:flex;
+     justify-content: space-around;
+ }
+ #section{
+     font-size: 18px;
+    text-align: center;
+     width:50%;
+     padding: 10px;
+     margin:10px;
+
+ }
+ 
+ h1{
+     margin:0 auto
+ }
+ .footer{
+     margin-top: 30px;
+     height :150px;
+     background-color: blue;
+ }
+
+</style>
+<html>
+<head></head>
+<body>
+    <div class="body">
+    {{{ body }}}
+    <div class="container" style="background-color: {{color}}">
+     <h1>Hi! <br>My name is {{ name }}</h1>
+    
+        <img id="img"src="{{avatar_url}}" alt="profilePic">
+    
+    <ul class="list"><li>Location</li>
+    <li>GitHub</li>
+    <li>Blog</li></ul>
+    </div> 
+    </div>
+    <div class="main">
+        <p>{{bio}}</p>
+        <div class="row">
+            <section id="section" style="background-color:{{color}}">Public Repositories<br>{{public_repos}}</section>
+            <section id="section" style="background-color:{{color}}">Followers<br>{{followers}}</section>
+        </div>
+            <div class="row">
+            <section id="section" style="background-color:{{color}}">GitHub Stars<br>{{public_gists}}</section>
+            <section id="section" style="background-color:{{color}}">Following<br>{{following}}</section>
+            </div>
+    </div>
+    <div class="footer"></div>
+   
+ </div>
+</body>
+</html>
