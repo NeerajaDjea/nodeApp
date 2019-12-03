@@ -19,11 +19,12 @@
     background-color: rgb(93, 84, 224);
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: 5px;
     }
     #img
    {
     align-self: center;
-    width: 50%;
+    width: 40%;
     border: solid 2px yellow;
      border-radius: 50%;}
     }
@@ -45,6 +46,7 @@
      margin-top: 10px;
      display:flex;
      justify-content: space-around;
+     padding: 30px;
    }
    p{
      text-align: center;
@@ -53,16 +55,23 @@
     {
      font-size: 18px;
     text-align: center;
-     width:50%;
+     width:40%;
      padding: 10px;
      margin:10px;
+     border-radius: 5px;
    }
  
  h1
  {
      margin:0 auto
  }
- 
+ .footer{
+   width: 100%;
+   position: fixed;
+   height: 30%;
+   background-color: rgb(164, 172, 240);
+
+ }
 </style>
 <html>
 <head></head>
@@ -79,6 +88,7 @@
                   <li><a href="{{blog}}">Blog</a></li>
              </ul>
       </div>
+    </div>
 
        <div class="main">
           <p>{{bio}}</p>
@@ -93,7 +103,8 @@
             </div>
 
         </div>
-
-    </div>
+        
+<div class="footer"></div>
+    
 </body>
 </html>
