@@ -7,5 +7,6 @@
 * The background color is set to that of the user's favourite color and the profile image is also included.
 
 # Usage
-*Clone the repo and run it in the command line using index2.js 
-*A PDF will be generated which can be found in the same folder
+* Clone the repo and run it in the command line using index2.js 
+
+* A PDF will be generated which can be found in the same folder
